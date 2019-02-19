@@ -183,7 +183,7 @@ public class Stackoverflow26618647Test {
         return jaxbClasspath.toString();
     }
 
-    @Test(expected = UnmarshalException.class)
+    @Test(expected = JAXBException.class)
     public void test() throws JAXBException, IOException {
         JAXBContext jaxbContext = JAXBContext.newInstance(getJAXBObjectFactoryClassPath());
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
